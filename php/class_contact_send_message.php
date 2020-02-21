@@ -16,7 +16,7 @@
         public function verifyEmail($email){
             return $email=filter_var($email, FILTER_VALIDATE_EMAIL);
         }
-        // in this cas it tooks three arguments, if we need to send more we can use an array
+        // in this case it tooks three arguments, if we need to send more we can use an array
         public function create_contact($name, $email,$subject, $message){
             $name=$this->verify_data($name);
             $subject=$this->verify_data($subject);
