@@ -24,7 +24,7 @@ function errorMessage(form, text, childForm ){
 }
 
 function validateFormData(pattern,patt,form){
-    // remove error message at the beginning if they exist
+    // remove error message at the beginning if it exists
     if(document.getElementById("data-"+form[patt].name)!==null){
         document.getElementById("data-"+form[patt].name).remove();
     }
