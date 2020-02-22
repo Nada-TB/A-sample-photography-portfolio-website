@@ -18,7 +18,7 @@ function response(event){
             }
         };
 
-        xhttp.open("POST", "php/send_message.php", true);
+        xhttp.open("POST", "../php/send_message.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("response="+response);
         }
