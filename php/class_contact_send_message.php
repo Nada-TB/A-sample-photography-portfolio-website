@@ -25,7 +25,7 @@
             if($this->verifyEmail($email)==true){
                 
                     if(!empty($name) && !empty($subject) && !empty($message)){
-                        $this->connection->interaction_dataBase_without_fetch("INSERT INTO contacts( name, email, subject, message) VALUES (?,?,?,?)",[$name, $email, $subject, $message]);
+                        //$this->connection->interaction_dataBase_without_fetch("INSERT INTO contacts( name, email, subject, message) VALUES (?,?,?,?)",[$name, $email, $subject, $message]);
                         return "thanks for your mail, I'll respond you as soon as possible";
                     }else{
                         return 'you must fill all of the fields';
