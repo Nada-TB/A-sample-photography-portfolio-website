@@ -9,7 +9,7 @@ $email=$response->email;
 $subject=$response->subject;
 $message=$response->message;
 if(!empty($response)){
-    $contact= new contact();
+    /*$contact= new contact();*/
     /*$message=$contact->create_contact($name, $email, $subject,$message);*/ //require database
     $message=json_encode("thanks for your mail, I'll respond you as soon as possible");
     echo $message;
